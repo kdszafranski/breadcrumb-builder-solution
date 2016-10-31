@@ -12,31 +12,41 @@
       <p>Grunge never died.</p>
     </header>
     <aside>
-      <h1>Navigation</h1>
+      <h1>Whatever</h1>
       <ol>
-        <li><a class="top-nav" href="#">Shirts</a></li>
+        <li><a class="expand-nav" href="#">Shirts</a></li>
         <li class="sub-nav">
           <ul>
-            <li><a>Flanel</a></li>
+            <li><a class="expand-nav" href="#">Flanel</a></li>
             <li class="sub-nav">
               <ul>
-                <li><a>Sleeves</a></li>
+                <li><a class="expand-nav" href="#">Sleeves</a></li>
+                <li class="sub-nav">
+                  <ul>
+                    <li><a>Shredded Sleeves</a></li>
+                    <li><a>Long Sleeves</a></li>
+                    <li><a>Dirty Sleeves</a></li>
+                  </ul>
+                </li>
                 <li><a>No Sleeves</a></li>
                 <li><a>Clean</a></li>
               </ul>
+            </li>
             <li><a>Red Flanel</a></li>
             <li><a>Ripped</a></li>
           </ul>
         </li>
-        <li><a class="top-nav" href="#">Pants</a></li>
+        <li><a class="expand-nav" href="#">Pants</a></li>
         <li class="sub-nav">
           <ul>
             <li><a>Jeans</a></li>
             <li><a>Black Jeans</a></li>
             <li><a>Ripped Jeans</a></li>
+            <li><a>Ragged Jeans</a></li>
+            <li><a>Oversized Jeans</a></li>
           </ul>
         </li>
-        <li><a class="top-nav" href="#">Shoes</a></li>
+        <li><a class="expand-nav" href="#">Shoes</a></li>
         <li class="sub-nav">
           <ul>
             <li><a>Old</a></li>
@@ -44,7 +54,7 @@
             <li><a>Sandals</a></li>
           </ul>
         </li>
-        <li><a class="top-nav" href="#">Hats</a></li>
+        <li><a class="expand-nav" href="#">Hats</a></li>
         <li class="sub-nav">
           <ul>
             <li><a>Dusty</a></li>
@@ -53,7 +63,7 @@
             <li><a>Baseball</a></li>
           </ul>
         </li>
-        <li><a class="top-nav" href="#">Gloves</a></li>
+        <li><a class="expand-nav" href="#">Gloves</a></li>
         <li class="sub-nav">
           <ul>
             <li><a>Fingerless</a></li>
@@ -63,13 +73,9 @@
       </ol>
     </aside>
     <main>
-      <h1>Stuff</h1>
-      <section id="breadcrumbs">
-        <ol>
-          <li><a href="#">Level One</a></li>
-          <li><a href="#">Level Two</a></li>
-          <li><a href="#">Level Three</a></li>
-        </ol>
+      <h1 id="department"></h1>
+      <section >
+        <ol id="breadcrumbs"></ol>
       </section>
     </main>
   </body>

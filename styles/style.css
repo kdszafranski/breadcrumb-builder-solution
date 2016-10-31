@@ -29,7 +29,7 @@ ol {
   padding-left: 0;
 }
 
-aside > ol > li {
+aside > ol li {
   margin: 0 0 8px 0;
 }
 
@@ -37,15 +37,15 @@ aside > ol > li {
   display: none;
 }
 
-#breadcrumbs > ol li {
+#breadcrumbs > li {
   float: left;
 }
 
-#breadcrumbs > ol li:after {
+#breadcrumbs > li:after {
   content: ' /';
 }
 
-#breadcrumbs > ol li a {
+#breadcrumbs > li a {
 
 }
 

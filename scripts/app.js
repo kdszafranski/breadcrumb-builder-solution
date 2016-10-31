@@ -1,18 +1,25 @@
 $(document).ready(function() {
-  console.log('First?');
+  // our string of crumbs
+  var trail = "";
 
   // Nav Events
-  $(".top-nav").on("click", toggleNav);
+  $(".expand-nav").on("click", toggleNav);
 
+  // Toggles visibility of top-level navigation items
   function toggleNav(event) {
     event.preventDefault();
-    console.log('clicked');
-    console.log($(this).parent().siblings().first());
+
     $(this).parent().next().toggle();
+
+    trail = $(this).text();
+    $("#breadcrumbs").append('<li>' + trail + '</li>');
+
+    // Update department Heading
+    $("#department").text(trail);
   }
 
   function loadOne() {
     event.preventDefault();
-
   }
+
 });
