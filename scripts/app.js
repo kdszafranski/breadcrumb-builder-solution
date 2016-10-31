@@ -4,6 +4,12 @@ $(document).ready(function() {
 
   // Nav Events
   $(".expand-nav").on("click", toggleNav);
+  $(".bottom").on("click", clickBottom);
+
+  function clickBottom($el) {
+    event.preventDefault();
+    updateTrail($(this));
+  }
 
   // Toggles visibility of top-level navigation items
   function toggleNav(event) {
@@ -16,13 +22,17 @@ $(document).ready(function() {
       hideSubNavs();
     }
 
+    updateTrail($(this));
+
     // open this top level
     $(this).parent().show();
     // open this sub nav
     $(this).parent().next().show();
+  }
 
+  function updateTrail($el) {
     // grab element text
-    trail = $(this).text();
+    trail = $el.text();
 
     // add dept string at end of breadcrumbs
     $("#breadcrumbs").append('<li>' + trail + '</li>');
