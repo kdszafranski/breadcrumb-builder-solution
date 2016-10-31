@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   // Nav Events
   $(".expand-nav").on("click", toggleNav);
-  $(".bottom").on("click", clickBottom);
+  $(".bottom-level").on("click", clickBottom);
 
   function clickBottom($el) {
     event.preventDefault();
