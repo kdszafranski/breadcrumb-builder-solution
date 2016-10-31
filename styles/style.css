@@ -35,6 +35,29 @@ aside > ol li {
   margin: 0 0 8px 0;
 }
 
+li.sub-nav ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+
+a.expand-nav {
+  color: darkred;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  a.expand-nav:hover {
+    text-decoration: underline;
+  }
+
+
 .sub-nav {
   display: none;
 }
