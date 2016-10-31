@@ -9,17 +9,34 @@ $(document).ready(function() {
   function toggleNav(event) {
     event.preventDefault();
 
-    $(this).parent().next().toggle();
+    // Reset all navs
+    if($(this).hasClass("top-level")) {
+      $("#breadcrumbs").empty();
+      hideTopNavs();
+      hideSubNavs();
+    }
 
+    // open this top level
+    $(this).parent().show();
+    // open this sub nav
+    $(this).parent().next().show();
+
+    // grab element text
     trail = $(this).text();
+
+    // add dept string at end of breadcrumbs
     $("#breadcrumbs").append('<li>' + trail + '</li>');
 
     // Update department Heading
     $("#department").text(trail);
   }
 
-  function loadOne() {
-    event.preventDefault();
+  function hideTopNavs() {
+    $(".top-level").children().first().hide();
+  }
+
+  function hideSubNavs() {
+    $(".sub-nav").hide();
   }
 
 });
