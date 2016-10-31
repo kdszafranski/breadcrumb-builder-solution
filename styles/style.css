@@ -5,7 +5,7 @@ body {
 header {
   text-align: center;
   background-color: lightgray;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   border-bottom: 1px dashed gray;
 }
@@ -16,11 +16,13 @@ header {
 aside {
   float: left;
   width: 300px;
+  border-right: 1px dashed gray;
 }
 
 main {
   float: left;
   width: 70%;
+  padding: 0 20px;
 }
 
 ol {
