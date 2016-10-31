@@ -2,6 +2,17 @@ body {
   font-family: Tahoma;
 }
 
+header {
+  text-align: center;
+  background-color: lightgray;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px dashed gray;
+}
+  header h1 {
+    color: black;
+  }
+
 aside {
   float: left;
   width: 300px;
